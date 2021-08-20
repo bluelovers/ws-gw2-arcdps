@@ -64,7 +64,7 @@ Bluebird.map([
 
 		cht_new.push(`;${encodings} BOM`);
 		cht_new.push(`;Traditional Chinese`);
-		cht_new.push(`;https://github.com/bluelovers/node-gw2plus/tree/master/dist/assets/arcdps/translations/cht/arcdps_lang.ini`);
+		cht_new.push(`;https://raw.githubusercontent.com/bluelovers/ws-gw2-arcdps/master/packages/arcdps-lang-ini/lib/arcdps_lang.ini`);
 		cht_new.push(`;Links`);
 		cht_new.push(`;https://www.deltaconnected.com/arcdps/translations`);
 		cht_new.push(`;https://raw.githubusercontent.com/Snowy1794/Arcdps-translation-Chinese-simplified/master/arcdps_lang.ini`);

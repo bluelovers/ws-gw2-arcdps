@@ -1,12 +1,5 @@
 # README.md
 
-    <%= description %>
+arcdps 繁體語言包 (chinese traditional)
 
-## install
-
-```bash
-yarn add <%= name %>
-yarn-tool add <%= name %>
-yt add <%= name %>
-```
-
+https://raw.githubusercontent.com/bluelovers/ws-gw2-arcdps/master/packages/arcdps-lang-ini/lib/arcdps_lang.ini

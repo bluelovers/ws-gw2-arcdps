@@ -136,3 +136,5 @@ jest.config.js.map
 /test/tsconfig.json.tpl
 /tsconfig.json.tpl
 /report.json
+!/test/script/*.js
+!/test/__root.js

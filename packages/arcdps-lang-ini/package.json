@@ -6,6 +6,8 @@
   "author": "bluelovers",
   "main": "index.js",
   "scripts": {
+    "prebuild": "node ./test/script/download",
+    "build": "node ./test/script/build-ini",
     "coverage": "yarn run test -- --coverage",
     "lint": "ynpx --quiet eslint -- **/*.ts",
     "test": "jest --passWithNoTests",

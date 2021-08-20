@@ -7,6 +7,7 @@
     "packages/*"
   ],
   "scripts": {
+    "build:arcdps:lang": "yarn workspace arcdps-enum-builder run build & yarn workspace arcdps-lang-ini run build",
     "test": "yarn-tool ws run test",
     "install:reset-lockfile": "yarn-tool install --reset-lockfile",
     "lerna:publish": "yarn run prepublishOnly:root && lerna publish && yarn run postpublishOnly",
