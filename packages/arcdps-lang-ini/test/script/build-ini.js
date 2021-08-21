@@ -38,7 +38,10 @@ function toTW(value) {
         .replace(/默認/g, '預設')
         .replace(/高級/g, '進階')
         .replace(/\bbuff\b/ig, 'BUFF')
-        .replace(/風格/g, '樣式');
+        .replace(/風格/g, '樣式')
+        .replace(/兼容性/g, '相容性')
+        .replace(/坐標/g, '座標')
+        .replace(/界面/g, '介面');
 }
 exports.toTW = toTW;
 const ids = (0, ts_enum_util_1.$enum)(en_1.e_translate).getValues();
@@ -49,6 +52,7 @@ function safe(s) {
 bluebird_1.default.map([
     (0, path_1.join)(__root_1.__root, 'test/source/chs.ini'),
     (0, path_1.join)(__root_1.__root, 'test/source/cht-002.ini'),
+    //join(__root, 'test/source/cht-armor324.ini'),
     (0, path_1.join)(__root_1.__root, 'test/source/cht.ini'),
     (0, path_1.join)(__root_1.__root, 'test/source/overwrite.ini'),
 ], (file) => (0, ini_1.readArcDpsLangIni)(file).then(ini => {
@@ -57,11 +61,13 @@ bluebird_1.default.map([
     .then((inis) => {
     let cht_new = ['[lang]'];
     cht_new.push(`;${ini_1.encodings} BOM`);
-    cht_new.push(`;Traditional Chinese`);
+    cht_new.push(`;Traditional Chinese 繁體中文`);
     cht_new.push(`;https://raw.githubusercontent.com/bluelovers/ws-gw2-arcdps/master/packages/arcdps-lang-ini/lib/arcdps_lang.ini`);
     cht_new.push(`;Links`);
+    cht_new.push(`;https://www.deltaconnected.com/arcdps`);
     cht_new.push(`;https://www.deltaconnected.com/arcdps/translations`);
     cht_new.push(`;https://raw.githubusercontent.com/Snowy1794/Arcdps-translation-Chinese-simplified/master/arcdps_lang.ini`);
+    cht_new.push(`;https://hackmd.io/@lonelydragon0122/HyFvmYIcU/%2FVl7TfXcSTHKm0ApagpplBQ`);
     cht_new.push(`;`);
     cht_new.push(`;`);
     let no_lang = [];
