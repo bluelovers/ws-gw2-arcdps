@@ -32,7 +32,13 @@ function toTW(value) {
         safe: false,
     })
         .replace(/日志/g, '日誌')
-        .replace(/窗口/g, '視窗');
+        .replace(/窗口/g, '視窗')
+        .replace(/保存/g, '儲存')
+        .replace(/更改/g, '變更')
+        .replace(/默認/g, '預設')
+        .replace(/高級/g, '進階')
+        .replace(/\bbuff\b/ig, 'BUFF')
+        .replace(/風格/g, '樣式');
 }
 exports.toTW = toTW;
 const ids = (0, ts_enum_util_1.$enum)(en_1.e_translate).getValues();
